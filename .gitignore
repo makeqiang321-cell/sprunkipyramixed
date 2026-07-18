@@ -13,3 +13,5 @@ _translate_games.py
 *.jsonl
 temp/
 .DS_Store
+
+.vercel
