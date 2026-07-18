@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todos los Juegos — Sprunki Pyramixed y Más | sprunkipyramixed.app</title>
+    <meta name="description" content="Explora juegos gratuitos de navegador — Sprunki Pyramixed, mods de Incredibox, juegos de creación musical y más. Todos se pueden jugar al instante sin descarga. No se necesita cuenta.">
+    <link rel="canonical" href="https://sprunkipyramixed.app/es/games.html">
+    <link rel="alternate" hreflang="en" href="https://sprunkipyramixed.app/games.html">
+    <link rel="alternate" hreflang="es" href="https://sprunkipyramixed.app/es/games.html">
+    <link rel="alternate" hreflang="ru" href="https://sprunkipyramixed.app/ru/games.html">
+    <meta property="og:locale" content="es">
+
+    <link rel="alternate" hreflang="x-default" href="https://sprunkipyramixed.app/games.html">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Merriweather:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#05b4d3">
+    <link rel="icon" type="image/png" href="../assets/sprunki-pyramixed.png">
+    <link rel="apple-touch-icon" href="../assets/sprunki-pyramixed.png">
+    <meta name="theme-color" content="#05b4d3">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/games.css">
+    <meta name="robots" content="index, follow">
+    <meta property="og:image" content="https://sprunkipyramixed.app/assets/sprunki-pyramixed.png">
+</head>
+<body>
+    <div class="min-h-screen font-sans antialiased bg-background text-foreground">
+
+        <!-- ===== HEADER ===== -->
+        <header class="header">
+            <div class="header-inner">
+                <div class="header-logo">
+                    <a class="header-logo-link" title="Sprunki Pyramixed" href="../index.html">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 32'%3E%3Crect width='140' height='32' rx='8' fill='%2305b4d3'/%3E%3Ctext x='70' y='22' text-anchor='middle' font-size='13' font-weight='700' fill='white' font-family='sans-serif'%3ESprunki%3C/text%3E%3C/svg%3E" alt="Sprunki Pyramixed" width="140" height="32" class="header-logo-img">
+                        <span class="header-logo-text">Sprunki Pyramixed</span>
+                    </a>
+                </div>
+                <div class="header-nav-center">
+                    <nav class="header-nav">
+                        <a class="header-nav-link" title="Inicio" href="../index.html">Inicio</a>
+                        <a class="header-nav-link active" title="Todos los Juegos" href="../games.html">Todos los Juegos</a>
+                    </nav>
+                </div>
+                <div class="header-actions">
+                    <select id="langSwitcher" style="background:var(--color-bg-card);color:var(--color-text);border:1px solid var(--color-border);border-radius:6px;padding:6px 8px;font-size:0.8rem;cursor:pointer;">
+                        <option value="en">English</option>
+                        <option value="es" selected>Español</option>
+                        <option value="ru">Русский</option>
+                    </select>
+                    <button type="button" class="header-icon-btn theme-toggle" aria-label="Toggle Theme" id="themeToggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                    </button>
+                    <button type="button" class="header-hamburger" id="menuToggle" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-nav" id="mobileNav">
+                <a class="mobile-nav-link" href="../index.html">Inicio</a>
+                <a class="mobile-nav-link active" href="../games.html">Todos los Juegos</a>
+            </div>
+        </header>
+
+        <!-- ===== BREADCRUMB ===== -->
+        <div class="breadcrumb-bar">
+            <div class="container">
+                <div class="breadcrumb-inner">
+                    <a class="breadcrumb-link" title="Inicio" href="../index.html">Inicio</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="breadcrumb-chevron"><path d="m9 18 6-6-6-6"/></svg>
+                    <span class="breadcrumb-current">Todos los Juegos</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== MAIN ===== -->
+        <main class="container py-6">
+            <div class="games-page-layout">
+                <!-- Sidebar -->
+                <aside class="games-sidebar">
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-widget-title">Juegos</h3>
+                        <ul class="sidebar-menu">
+                            <li><a href="#" class="sidebar-menu-link active" data-filter="all">Lista de Juegos</a></li>
+                            <li><a href="#" class="sidebar-menu-link" data-filter="popular">Juegos Populares</a></li>
+                            <li><a href="#" class="sidebar-menu-link" data-filter="new">Juegos Nuevos</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Game Grid -->
+                <div class="games-main">
+                    <div class="games-header">
+                        <h1 class="games-title">Lista de Juegos</h1>
+                        <p class="games-subtitle">Descubre y juega juegos increíbles de nuestra colección</p>
+                    </div>
+                    <div class="games-grid" id="gamesGrid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand-row">
+                        <svg viewBox="0 0 140 32" fill="none" class="footer-logo-svg"><rect width="140" height="32" rx="8" fill="#fff" opacity="0.2"/><rect width="140" height="32" rx="8" fill="none" stroke="#fff" stroke-width="1" opacity="0.3"/><text x="70" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="sans-serif">Sprunki</text></svg>
+                        <span class="footer-site-name">Sprunki Pyramixed</span>
+                    </div>
+                    <p class="footer-about">Juega Sprunki Pyramixed — un mod de Incredibox creado por la comunidad. Arrastra, suelta, superpone ritmos y efectos, descubre combinaciones ocultas y comparte tus mezclas en línea.</p>
+                </div>
+                <div class="footer-col"></div>
+                <div class="footer-col"></div>
+                <div class="footer-col">
+                    <h3 class="footer-heading">Contáctanos</h3>
+                    <div class="footer-contact-row">
+                        <a href="mailto:support@sprunkipyramixed.app">Contact Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-inner">
+                        <p>&copy; 2026 Sprunki Pyramixed. Todos los derechos reservados.</p>
+                        <div class="footer-bottom-links">
+                            <a href="../privacy-policy.html">Privacy Policy</a>
+                            <a href="../terms-of-service.html">Terms of Service</a>
+                            <a href="../about-us.html">About Us</a>
+                            <a href="../contact-us.html">Contact Us</a>
+                            <a href="../copyright-infringement-notice-procedure.html">Copyright Notice</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [{
+            "@type": "CollectionPage",
+            "name": "Todos los Juegos — Sprunki Pyramixed en sprunkipyramixed.app",
+            "description": "Explora juegos gratuitos de navegador, incluyendo Sprunki Pyramixed, mods de Incredibox y juegos de creación musical. Todos se pueden jugar al instante sin descarga.",
+            "url": "https://sprunkipyramixed.app/es/games.html",
+            "inLanguage": "es",
+            "isPartOf": {"@id": "https://sprunkipyramixed.app#website"},
+            "breadcrumb": {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sprunkipyramixed.app/es"},
+                    {"@type": "ListItem", "position": 2, "name": "Todos los Juegos", "item": "https://sprunkipyramixed.app/es/games.html"}
+                ]
+            }
+        }, {
+            "@type": "WebSite",
+            "@id": "https://sprunkipyramixed.app#website",
+            "name": "Sprunki Pyramixed",
+            "alternateName": "Sprunki Pyramixed",
+            "url": "https://sprunkipyramixed.app",
+            "description": "Plataforma de juegos gratuitos en línea. Juega Sprunki Pyramixed y otros juegos de navegador al instante — sin descarga.",
+            "inLanguage": "es"
+        }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Todos los Juegos — Sprunki Pyramixed en sprunkipyramixed.app",
+      "description": "Explora juegos gratuitos incluyendo Sprunki Pyramixed, mods de Incredibox y juegos de creación musical.",
+      "url": "https://sprunkipyramixed.app/es/games.html",
+      "inLanguage": "es",
+      "isPartOf": {"@id": "https://sprunkipyramixed.app/es/#website"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type":"ListItem","position":1,"name":"Inicio","item":"https://sprunkipyramixed.app/es/"},
+          {"@type":"ListItem","position":2,"name":"Todos los Juegos","item":"https://sprunkipyramixed.app/es/games.html"}
+        ]
+      }
+    }
+    </script>
+    <script src="../js/games-page.js?v=2"></script>
+</body>
+</html>

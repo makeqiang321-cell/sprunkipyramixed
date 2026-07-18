@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Sitemap: https://sprunkipyramixed.app/sitemap.xml
+
+# AI crawler directives
+User-agent: GPTBot
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: PerplexityBot
+Allow: /

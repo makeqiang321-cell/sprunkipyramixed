@@ -1,0 +1,11 @@
+seomachine/
+seomachine.worktrees/
+.claude/
+*.py
+analyze_content.js
+translate-*.js
+logo-generator.html
+page_fetch.html
+*.jsonl
+temp/
+.DS_Store

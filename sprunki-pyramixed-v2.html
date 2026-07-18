@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <title>Sprunki Pyramixed — Play the Free Incredibox Mod Online | sprunkipyramixed.app</title>
+    <meta name="description" content="Play Sprunki Pyramixed online free — a fan-made Incredibox mod by Pyramix. Drag characters, layer tribal beats, unlock hidden codes, and trigger horror mode. No download.">
+    <link rel="canonical" href="https://sprunkipyramixed.app">
+    <link rel="alternate" hreflang="en" href="https://sprunkipyramixed.app">
+    <meta property="og:title" content="Sprunki Pyramixed — Free Incredibox Mod Online">
+    <meta property="og:description" content="A fan-made Incredibox mod with Egyptian-themed characters, tribal beats, hidden unlock codes, and a horror mode toggle. Play free in your browser.">
+    <meta property="og:image" content="https://sprunkipyramixed.app/assets/sprunki-pyramixed.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Merriweather:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/sprunki-pyramixed.png">
+    <link rel="apple-touch-icon" href="assets/sprunki-pyramixed.png">
+    <meta name="theme-color" content="#05b4d3">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="min-h-screen font-sans antialiased bg-background text-foreground">
+    <header class="header"><div class="header-inner"><div class="header-logo"><a class="header-logo-link" href="index.html"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 32'%3E%3Crect width='140' height='32' rx='8' fill='%2305b4d3'/%3E%3Ctext x='70' y='22' text-anchor='middle' font-size='13' font-weight='700' fill='white' font-family='sans-serif'%3ESprunki%3C/text%3E%3C/svg%3E" alt="Sprunki Pyramixed" width="140" height="32" class="header-logo-img"><span class="header-logo-text">Sprunki Pyramixed</span></a></div><nav class="header-nav"><a class="header-nav-link active" href="index.html">Home</a><a class="header-nav-link" href="games.html">All Games</a></nav></div></header>
+
+    <div class="breadcrumb-bar"><div class="container"><div class="breadcrumb-inner"><a class="breadcrumb-link" href="index.html">Home</a><span class="breadcrumb-chevron">›</span><span class="breadcrumb-current">Sprunki Pyramixed</span></div></div></div>
+
+    <main class="container py-6">
+        <!-- GAME WINDOW -->
+        <div class="game-card"><div class="game-preview" id="gamePreview">
+            <div class="game-preview-overlay" id="previewOverlay"><div class="preview-content"><div class="preview-image-wrap"><div class="preview-image-inner"><div class="preview-image-glow"></div><div class="preview-image-glow-secondary"></div><img src="assets/sprunki-pyramixed.png" alt="Sprunki Pyramixed" class="game-cover-img" width="600" height="400" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;" loading="eager" fetchpriority="high"></div></div><div class="preview-text"><div class="preview-title">Sprunki Pyramixed</div><div class="preview-tagline">Drag. Drop. Mix. Discover Secrets.</div><button type="button" class="play-btn" id="playBtn"><span class="play-btn-bg"></span><span class="play-btn-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/></svg></span><span class="play-btn-text">Play Game</span></button></div></div></div>
+            <div class="game-iframe-area" id="gameIframe"><iframe id="gameFrame" src="https://img.sprunki.net/game/incredibox-sprunki-retexture.html" frameborder="0" allowfullscreen allow="autoplay; fullscreen" title="Sprunki Pyramixed" style="width:100%;height:100%;border:none;display:block;position:absolute;top:0;left:0;"></iframe></div>
+        </div><div class="game-info-bar"><div class="game-info-left"><h1 class="game-title">Sprunki Pyramixed</h1></div><div class="game-info-right"><button class="game-action-btn" onclick="document.querySelector('iframe').requestFullscreen()">⛶</button></div></div></div>
+
+        <!-- GUIDE -->
+        <article class="guide-article" style="margin-top:32px;">
+            <h2 class="guide-title">Sprunki Pyramixed — Fan-Made Incredibox Mod</h2>
+            <p style="text-align:center;color:var(--color-muted-fg);margin-bottom:24px;">Egyptian-themed characters, tribal beats, hidden unlock codes, and a horror mode toggle — all free in your browser.</p>
+            <hr class="guide-divider">
+
+            <nav class="guide-tabs" style="display:flex;flex-wrap:nowrap;gap:4px;margin-bottom:24px;border-bottom:2px solid var(--color-border);padding-bottom:0;overflow-x:auto;">
+                <a href="#about" class="guide-tab active" style="padding:10px 16px;border-radius:8px 8px 0 0;font-size:0.88rem;font-weight:600;color:var(--color-text);background:var(--color-bg-card);border:1px solid var(--color-border);border-bottom:none;text-decoration:none;">About</a>
+                <a href="#features" class="guide-tab" style="padding:10px 16px;border-radius:8px 8px 0 0;font-size:0.88rem;font-weight:600;color:var(--color-muted-fg);text-decoration:none;">Features</a>
+                <a href="#how-to-play" class="guide-tab" style="padding:10px 16px;border-radius:8px 8px 0 0;font-size:0.88rem;font-weight:600;color:var(--color-muted-fg);text-decoration:none;">How to Play</a>
+                <a href="#tips" class="guide-tab" style="padding:10px 16px;border-radius:8px 8px 0 0;font-size:0.88rem;font-weight:600;color:var(--color-muted-fg);text-decoration:none;">Tips</a>
+                <a href="#secrets" class="guide-tab" style="padding:10px 16px;border-radius:8px 8px 0 0;font-size:0.88rem;font-weight:600;color:var(--color-muted-fg);text-decoration:none;">Secrets</a>
+                <a href="#characters" class="guide-tab" style="padding:10px 16px;border-radius:8px 8px 0 0;font-size:0.88rem;font-weight:600;color:var(--color-muted-fg);text-decoration:none;">Characters</a>
+                <a href="#history" class="guide-tab" style="padding:10px 16px;border-radius:8px 8px 0 0;font-size:0.88rem;font-weight:600;color:var(--color-muted-fg);text-decoration:none;">History</a>
+                <a href="#variants" class="guide-tab" style="padding:10px 16px;border-radius:8px 8px 0 0;font-size:0.88rem;font-weight:600;color:var(--color-muted-fg);text-decoration:none;">Versions</a>
+                <a href="#faq" class="guide-tab" style="padding:10px 16px;border-radius:8px 8px 0 0;font-size:0.88rem;font-weight:600;color:var(--color-muted-fg);text-decoration:none;">FAQ</a>
+            </nav>
+
+            <!-- ABOUT -->
+            <h2 class="guide-h2" id="about">What Is Sprunki Pyramixed?</h2>
+            <figure style="margin:16px 0 24px;text-align:center;"><img src="assets/sprunki-pyramixed.png" alt="Sprunki Pyramixed gameplay" width="800" height="450" loading="lazy" style="max-width:100%;height:auto;border-radius:12px;border:1px solid var(--color-border);"></figure>
+            <p class="guide-p">Sprunki Pyramixed is a fan-made Incredibox mod by developer <strong>Pyramix</strong>. It takes the drag-and-drop music format and drops it into ancient Egypt — pop-friendly loops are gone, replaced by tribal drums, techno arpeggios, and atmospheric chants. Characters wear pharaoh headdresses against pyramid backdrops. You drag them onto a stage and they play. Simple as that.</p>
+            <p class="guide-p">The sound is the thing. Kicks hit thick and distorted, rumbling through the low end like thunder across sand. Melodies spiral in minor-key arpeggios — somewhere between a Berlin techno club and a pharaoh's burial chamber. Characters pulse and flicker with the beat. The whole thing feels ancient, alive, and slightly dangerous. Free in any browser. No download. No sign-up.</p>
+
+            <!-- WHY PLAYERS LOVE IT -->
+            <h2 class="guide-h2" id="features">Why Players Keep Coming Back</h2>
+            <div class="features-grid" style="display:grid;grid-template-columns:1fr;gap:16px;margin:20px 0 28px;">
+                <div class="feature-card" style="background:var(--color-bg-card);border:1px solid var(--color-border);border-radius:12px;padding:20px 18px;"><span style="font-size:2rem;">🎩</span><h3 style="font-size:1rem;font-weight:700;color:var(--color-text);margin:8px 0 4px;">Horror Mode Toggle</h3><p style="font-size:0.88rem;color:var(--color-muted-fg);line-height:1.6;margin:0;">Place the black bowler hat on any character. The stage darkens. Every loop twists into minor-key distortion. Character expressions shift from playful to unsettling. Remove the hat — everything snaps back instantly. Toggle mid-track without restarting.</p></div>
+                <div class="feature-card" style="background:var(--color-bg-card);border:1px solid var(--color-border);border-radius:12px;padding:20px 18px;"><span style="font-size:2rem;">🔐</span><h3 style="font-size:1rem;font-weight:700;color:var(--color-text);margin:8px 0 4px;">Hidden Character Unlocks</h3><p style="font-size:0.88rem;color:var(--color-muted-fg);line-height:1.6;margin:0;">Type <code>pyramix</code> into the lock icon to unlock Acid and Tox. <code>Mard</code>, <code>Val</code>, <code>Moch</code> each unlock another. Place Acid and Tox together on stage to summon Sulfur — a combo discovered by a player, not the developer.</p></div>
+                <div class="feature-card" style="background:var(--color-bg-card);border:1px solid var(--color-border);border-radius:12px;padding:20px 18px;"><span style="font-size:2rem;">🏛️</span><h3 style="font-size:1rem;font-weight:700;color:var(--color-text);margin:8px 0 4px;">Egyptian Sound Identity</h3><p style="font-size:0.88rem;color:var(--color-muted-fg);line-height:1.6;margin:0;">Beats are tribal percussion — heavier and darker than standard Incredibox. Melodies pull from Egyptian scales and techno synths. Effects layer chants, risers, and glitch cuts. It sounds like nothing else in the Sprunki catalog.</p></div>
+                <div class="feature-card" style="background:var(--color-bg-card);border:1px solid var(--color-border);border-radius:12px;padding:20px 18px;"><span style="font-size:2rem;">🎵</span><h3 style="font-size:1rem;font-weight:700;color:var(--color-text);margin:8px 0 4px;">Character Customization</h3><p style="font-size:0.88rem;color:var(--color-muted-fg);line-height:1.6;margin:0;">Characters change appearance when they receive different sound icons. Their outfits shift. Their animations transform. The same character can look and sound completely different depending on which loop you assign — creating visual variety that matches your mix.</p></div>
+                <div class="feature-card" style="background:var(--color-bg-card);border:1px solid var(--color-border);border-radius:12px;padding:20px 18px;"><span style="font-size:2rem;">🎯</span><h3 style="font-size:1rem;font-weight:700;color:var(--color-text);margin:8px 0 4px;">Rhythmic Challenges</h3><p style="font-size:0.88rem;color:var(--color-muted-fg);line-height:1.6;margin:0;">Beat-matching tasks scattered through the interface reward you with new characters and sound packs. Hit the right sequence and the game responds with visual feedback — glowing borders, pulsing icons, and unlock notifications.</p></div>
+                <div class="feature-card" style="background:var(--color-bg-card);border:1px solid var(--color-border);border-radius:12px;padding:20px 18px;"><span style="font-size:2rem;">📦</span><h3 style="font-size:1rem;font-weight:700;color:var(--color-text);margin:8px 0 4px;">20+ Community Variants</h3><p style="font-size:0.88rem;color:var(--color-muted-fg);line-height:1.6;margin:0;">Phase 3 through Phase 6, Shifted, Deluxe, Regretful, Swapped, Finished, Human Edition, 0.9, Love Edition, Daycare — each variant swaps the character roster and sound pack while keeping the same drag-and-drop core.</p></div>
+            </div>
+
+            <!-- HOW TO PLAY -->
+            <h2 class="guide-h2" id="how-to-play">How to Play</h2>
+            <ol class="guide-ol">
+                <li><strong>Pick your characters：</strong> The bottom row shows every available performer — default roster characters plus any you have unlocked. Drag them onto the seven stage slots above. Each one loops a different sound: drums, synths, vocals, or effects. Swap them freely until the combination clicks.</li>
+                <li><strong>Build from the beat up：</strong> Start with a drum or percussion character to anchor the rhythm. Add one melody. Layer effects last — use them sparingly. The mute button is your best friend. Click a character icon to silence it, then bring it back two bars later for a drop.</li>
+                <li><strong>Trigger horror mode：</strong> Grab the black bowler hat from the corner of the screen and drop it on any character. Everything changes. The stage darkens, the music distorts, and the mood flips. Remove the hat to snap back. Try it on different character types — vocals become whispers, beats turn into industrial percussion.</li>
+                <li><strong>Record and share：</strong> When your track feels right, hit record. Perform your mix and save it to your browser. Make another one next week and compare them side by side — the difference will surprise you. Share your best recordings on Discord or Scratch.</li>
+            </ol>
+
+            <!-- TIPS -->
+            <h2 class="guide-h2" id="tips">Tips from Experienced Players</h2>
+            <ul class="guide-ul">
+                <li><strong>Start with three characters max：</strong> The most common beginner trap is filling all seven slots immediately — the community jokingly calls this <strong>Sprunki Pyramixed melophobia</strong>. One beat, one melody, one effect. Get those three locked in before adding anything else. A sparse track with space between layers sounds more professional than seven characters fighting for room.</li>
+                <li><strong>Treat the mute button like an instrument：</strong> Cutting the drums for two bars and bringing them back creates a harder drop than any pre-made effect. Professional-sounding mixes use silence intentionally. Listen to your favorite tracks — they all do this.</li>
+                <li><strong>Solo to find problems：</strong> Right-click or long-press any character to hear it alone. If two melodies sound muddy together, solo each one, identify which layer is causing the clash, and swap it out.</li>
+                <li><strong>Keep horror mode to five or fewer characters：</strong> Too many active layers with the hat on can freeze the game. If it happens, just refresh the page.</li>
+            </ul>
+
+            <!-- SECRETS -->
+            <h2 class="guide-h2" id="secrets">Easter Eggs &amp; Hidden Secrets</h2>
+            <div class="table-wrap"><table class="guide-table">
+                <thead><tr><th>Secret</th><th>How to Activate</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Horror Mode</strong></td><td>Place the black bowler hat on any character</td></tr>
+                    <tr><td><strong>Acid &amp; Tox</strong></td><td>Type <code>pyramix</code> into the lock icon at the top of the screen</td></tr>
+                    <tr><td><strong>Mard</strong></td><td>Type <code>Mard</code> into the lock icon</td></tr>
+                    <tr><td><strong>Val</strong></td><td>Type <code>Val</code> into the lock icon</td></tr>
+                    <tr><td><strong>Moch</strong></td><td>Type <code>Moch</code> into the lock icon</td></tr>
+                    <tr><td><strong>Sulfur</strong></td><td>Place Acid and Tox on stage together</td></tr>
+                    <tr><td><strong>Hidden Surprise</strong></td><td>Press <strong>0</strong> during gameplay (works in most variants)</td></tr>
+                </tbody>
+            </table></div>
+
+            <!-- CHARACTERS -->
+            <h2 class="guide-h2" id="characters">Character Roster</h2>
+            <div class="table-wrap"><table class="guide-table">
+                <thead><tr><th>Category</th><th>Sound Type</th><th>How to Get</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Beats</strong></td><td>Tribal drums, heavy percussion</td><td>Available from start</td></tr>
+                    <tr><td><strong>Melodies</strong></td><td>Techno synths, Egyptian scales</td><td>Available from start</td></tr>
+                    <tr><td><strong>Effects</strong></td><td>Chants, risers, glitch cuts, filter sweeps</td><td>Available from start</td></tr>
+                    <tr><td><strong>Vocals</strong></td><td>Atmospheric pads, choral layers</td><td>Available from start</td></tr>
+                    <tr><td><strong>Hidden</strong></td><td>Tox, Acid, Sulfur, Mard, Val, Moch, Broker, Thysto</td><td>Unlock via codes or character combos</td></tr>
+                    <tr><td><strong>Horror Mode</strong></td><td>All characters transformed (distorted, minor-key)</td><td>Place black bowler hat on any character</td></tr>
+                </tbody>
+            </table></div>
+
+            <!-- HISTORY -->
+            <h2 class="guide-h2" id="history">How the Mod Came to Be</h2>
+            <p class="guide-p">Developer <strong>Pyramix</strong> launched the mod on Scratch in early 2024. Two features set it apart from every other Incredibox variant at the time: a horror toggle triggered by a single accessory, and a text-code system that turned hidden characters into a community treasure hunt. The first code — <strong>pyramix</strong> — was discovered within days. Mard, Val, and Moch followed over the next month.</p>
+            <p class="guide-p">The Acid-plus-Tox combo that unlocked Sulfur was found by a player, not the developer — a moment that defined the community-driven identity of the mod. Phase 3 expanded the roster in mid-2024. Shifted brought an electronic remix later that year. Deluxe, Regretful, Swapped, Finished, 2013, and Pre Pyramixed arrived as community spin-offs. Over twenty variants now exist across Scratch, Discord, and itch.io.</p>
+
+            <!-- VERSIONS -->
+            <h2 class="guide-h2" id="variants">Which Version Should You Play?</h2>
+            <div class="table-wrap"><table class="guide-table">
+                <thead><tr><th>Variant</th><th>Best For</th><th>What is Different</th></tr></thead>
+                <tbody>
+                    <tr><td><strong>Original (this page)</strong></td><td>New players</td><td>Core experience — learn the basics, unlock the main hidden characters</td></tr>
+                    <tr><td><strong>Phase 3</strong></td><td>Bigger roster</td><td>More characters, deeper Egyptian sound identity</td></tr>
+                    <tr><td><strong>Phase 4</strong></td><td>Most popular</td><td>Largest character selection, most unlock codes available</td></tr>
+                    <tr><td><strong>Shifted</strong></td><td>Electronic music fans</td><td>Entire sound palette remixed with electronic and synth elements</td></tr>
+                    <tr><td><strong>Human Edition</strong></td><td>Different art style</td><td>All characters redrawn — same sounds, completely different look</td></tr>
+                    <tr><td><strong>Regretful</strong></td><td>Horror enthusiasts</td><td>Even darker atmosphere, more unsettling character designs</td></tr>
+                </tbody>
+            </table></div>
+
+            <!-- FAQ -->
+            <h2 class="guide-h2" id="faq">Frequently Asked Questions</h2>
+            <h3 class="guide-h3">Who created Sprunki Pyramixed?</h3>
+            <p class="guide-p">Developer <strong>Pyramix</strong> built and published the mod on Scratch in early 2024. It is not affiliated with So Far So Good, the studio behind the original Incredibox.</p>
+            <h3 class="guide-h3">How do I unlock the hidden characters?</h3>
+            <p class="guide-p">Click the lock icon at the top of the screen. Type <code>pyramix</code> to unlock Acid and Tox. <code>Mard</code>, <code>Val</code>, and <code>Moch</code> each unlock one more. Place Acid and Tox together on stage to summon Sulfur. Codes sometimes vary between variants — check the community wiki for the latest.</p>
+            <h3 class="guide-h3">What does the black bowler hat do?</h3>
+            <p class="guide-p">It triggers horror mode. Place it on any character and the stage darkens, every loop shifts to minor-key, and character expressions turn unsettling. Remove the hat to return to normal instantly. The effect is different for each character type — vocals become whispers, beats turn industrial.</p>
+            <h3 class="guide-h3">How do I get Mini Gray?</h3>
+            <p class="guide-p">Mini Gray is one of several rare hidden characters. The exact unlock method varies between versions. Check the community wiki for current codes — what works in Phase 4 may not work in Shifted.</p>
+            <h3 class="guide-h3">What does the ambience layer do?</h3>
+            <p class="guide-p">Ambience adds background texture — drones, desert wind, subtle pads. It works best when running quietly beneath the other layers. Let it fill the space between your beats and melodies rather than pushing it to the front of the mix.</p>
+            <h3 class="guide-h3">Can I play on my phone?</h3>
+            <p class="guide-p">It works in mobile browsers, but drag-and-drop controls are designed for mouse or touchpad. Desktop gives the best experience. On a phone, rotating to landscape helps with precision when placing characters.</p>
+            <h3 class="guide-h3">Is it free?</h3>
+            <p class="guide-p">Yes. No payment, no account, no download. Open your browser, wait 30-45 seconds for the Egyptian assets to load, and start mixing.</p></article>
+
+        <!-- COMMENTS -->
+        <section class="comments-section" id="comments" style="max-width:800px;margin:40px auto 0;">
+            <h2 class="comments-heading">Comments</h2>
+            <div class="star-rating" id="starRating"><span class="star" data-value="1">&#9733;</span><span class="star" data-value="2">&#9733;</span><span class="star" data-value="3">&#9733;</span><span class="star" data-value="4">&#9733;</span><span class="star" data-value="5">&#9733;</span><span class="rating-value" style="font-size:0.85rem;color:var(--color-muted-fg);">10,000+ plays</span></div>
+            <form class="comment-form" id="commentForm"><input type="text" class="comment-input" placeholder="Your Name" required><textarea class="comment-textarea" placeholder="Your Comment" rows="4" required></textarea><button type="submit" class="comment-submit">Post Comment</button></form>
+            <div class="comment-list" id="commentList"></div>
+        </section>
+    </main>
+
+    <footer class="footer"><div class="container footer-bottom-inner"><p>&copy; 2026 Sprunki Pyramixed. All rights reserved.</p><div><a href="privacy-policy.html">Privacy</a> · <a href="terms-of-service.html">Terms</a></div></div></footer>
+</div>
+
+<script>
+document.getElementById('playBtn').addEventListener('click',function(){document.getElementById('previewOverlay').style.display='none';document.getElementById('gameIframe').style.display='block';});
+// Comments
+(function(){var s=document.querySelectorAll('#starRating .star'),r=document.querySelector('.rating-value'),f=document.getElementById('commentForm'),l=document.getElementById('commentList'),v=0,d=JSON.parse(localStorage.getItem('spComments')||'[]');d.forEach(function(c){a(c.n,c.t,c.r,c.d)});s.forEach(function(x){x.addEventListener('click',function(){v=parseInt(this.getAttribute('data-value'));s.forEach(function(y,i){y.style.color=i<v?'#f1c40f':'var(--color-muted)'})})});f.addEventListener('submit',function(e){e.preventDefault();var n=f.querySelector('.comment-input').value.trim(),t=f.querySelector('.comment-textarea').value.trim();if(!n||!t)return;var c={n:n,t:t,r:v,d:new Date().toLocaleDateString()};d.push(c);localStorage.setItem('spComments',JSON.stringify(d));a(n,t,v,c.d);f.reset()});function a(n,t,r,d){var x=document.createElement('div');x.style.cssText='background:var(--color-bg-card);border:1px solid var(--color-border);border-radius:10px;padding:14px 18px;margin-bottom:12px;';x.innerHTML='<div style="display:flex;justify-content:space-between;margin-bottom:6px;"><strong>'+n+'</strong><span style="font-size:0.8rem;color:var(--color-muted-fg);">'+(r?'★'.repeat(r)+'☆'.repeat(5-r)+' ':'')+d+'</span></div><p style="color:var(--color-muted-fg);margin:0;">'+t+'</p>';l.prepend(x)}})();
+</script>
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [{
+        "@type": "WebPage","@id":"https://sprunkipyramixed.app#webpage","name":"Sprunki Pyramixed — Free Incredibox Mod","url":"https://sprunkipyramixed.app",
+        "breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sprunkipyramixed.app"},{"@type":"ListItem","position":2,"name":"Sprunki Pyramixed","item":"https://sprunkipyramixed.app"}]},
+        "mainEntity":{"@id":"https://sprunkipyramixed.app#game"}
+    },{
+        "@type":"VideoGame","@id":"https://sprunkipyramixed.app#game","name":"Sprunki Pyramixed","description":"A fan-made Incredibox mod by Pyramix with Egyptian-themed characters, tribal beats, and a horror mode toggle.","image":"https://sprunkipyramixed.app/assets/sprunki-pyramixed.png","url":"https://sprunkipyramixed.app","applicationCategory":"GameApplication","operatingSystem":"Web Browser","genre":"Music Game","playMode":"SinglePlayer","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock"}
+    },{
+        "@type":"FAQPage","@id":"https://sprunkipyramixed.app#faq","mainEntity":[
+            {"@type":"Question","name":"Who created Sprunki Pyramixed?","acceptedAnswer":{"@type":"Answer","text":"Developer Pyramix built and published the mod on Scratch in early 2024."}},
+            {"@type":"Question","name":"How do I unlock the hidden characters?","acceptedAnswer":{"@type":"Answer","text":"Click the lock icon. Type pyramix for Acid and Tox. Mard, Val, and Moch unlock more. Acid+Tox unlocks Sulfur."}},
+            {"@type":"Question","name":"What is the black bowler hat for?","acceptedAnswer":{"@type":"Answer","text":"Place it on any character for horror mode. Stage darkens, music distorts, animations turn unsettling. Remove to revert."}},
+            {"@type":"Question","name":"How do I get Mini Gray?","acceptedAnswer":{"@type":"Answer","text":"Mini Gray is a rare hidden character. Check the community wiki for current unlock methods."}},
+            {"@type":"Question","name":"What does ambience do?","acceptedAnswer":{"@type":"Answer","text":"Adds background texture — drones, desert wind, subtle pads. Works best running quietly beneath other layers."}},
+            {"@type":"Question","name":"Can I play on my phone?","acceptedAnswer":{"@type":"Answer","text":"It works in mobile browsers but is designed for mouse. Desktop gives the best experience."}},
+            {"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. No payment, no account, no download. Open your browser and start mixing."}}
+        ]
+    }]
+}
+</script>
+</body>
+</html>
