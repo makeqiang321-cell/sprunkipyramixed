@@ -16,7 +16,22 @@
         { name: 'Sprunki Corruptbox',          img:'/assets/corruptbox.png', color1:'#1a1a2e',color2:'#e94560', url:'/games/corruptbox.html' },
         { name: 'Sprunki PvZ',                 img:'/assets/sprunki-pvz.png', color1:'#4ade80',color2:'#166534', url:'/games/sprunki-pvz.html' },
         { name: 'Sprunki Swapped Retextured',  img:'/assets/sprunki-swapped-retextured.webp', color1:'#7c2d8a',color2:'#e94560', url:'/games/sprunki-swapped-retextured.html' },
+        { name: 'Sprunki Swapped Alive',       img:'/assets/sprunki-swapped-alive.jpg', color1:'#16a34a',color2:'#0d0221', url:'/games/sprunki-swapped-alive.html' },
         { name: 'Sprunki Phase 16',            img:'/assets/sprunki-1996.png', color1:'#7c3aed',color2:'#a78bfa', url:'/games/phase-16.html' },
+        { name: 'Sprunki Phase 16 New',        img:'/assets/sprunki-phase-16-new.webp', color1:'#2e1065',color2:'#d946ef', url:'/games/sprunki-phase-16-new.html' },
+        { name: 'Sprunki Phase 32',            img:'/assets/sprunki-phase-32.jpg', color1:'#00e5ff',color2:'#7b2ff7', url:'/games/sprunki-phase-32.html' },
+        { name: 'Sprunki But Alphabet Lore',   img:'/assets/sprunki-but-alphabet-lore.png', color1:'#ef4444',color2:'#f59e0b', url:'/games/sprunki-but-alphabet-lore.html' },
+        { name: 'Sprunki Retake But Sprunksters', img:'/assets/sprunki-retake-but-sprunksters.png', color1:'#f472b6',color2:'#8b5cf6', url:'/games/sprunki-retake-but-sprunksters.html' },
+        { name: 'Sprunki Swap 2',              img:'/assets/sprunki-swap-2.png', color1:'#ec4899',color2:'#0ea5e9', url:'/games/sprunki-swap-2.html' },
+        { name: 'Sprunki Phase 17',            img:'/assets/sprunki-phase-17.jpg', color1:'#450a0a',color2:'#ef4444', url:'/games/sprunki-phase-17.html' },
+        { name: 'Sprunki Another One',         img:'/assets/sprunki-another-one.webp', color1:'#f59e0b',color2:'#f472b6', url:'/games/sprunki-another-one.html' },
+        { name: 'Sprunki Phase 19',            img:'/assets/sprunki-phase-19.jpg', color1:'#6366f1',color2:'#06b6d4', url:'/games/sprunki-phase-19.html' },
+        { name: 'Sprunki Kick the Buddy',      img:'/assets/sprunki-kick-the-buddy.png', color1:'#ef4444',color2:'#f59e0b', url:'/games/sprunki-kick-the-buddy.html' },
+        { name: 'Sprunki Phase 2 Definitive',  img:'/assets/sprunki-phase-2-definitive.png', color1:'#7c3aed',color2:'#ec4899', url:'/games/sprunki-phase-2-definitive.html' },
+        { name: 'Sprunki Pyramixed Deluxe',    img:'/assets/sprunki-pyramixed-deluxe.webp', color1:'#ff8c42',color2:'#ffb347', url:'/games/sprunki-pyramixed-deluxe.html' },
+        { name: 'Sprunksters: The Final Update', img:'/assets/sprunksters-final-update.jpg', color1:'#10b981',color2:'#84cc16', url:'/games/sprunksters-final-update.html' },
+        { name: "Sprunki Shifted Pepper's Take", img:'/assets/sprunki-shifted-peppers-take.jpg', color1:'#dc2626',color2:'#7f1d1d', url:'/games/sprunki-shifted-peppers-take.html' },
+        { name: 'FNF Whitty vs Boyfriend Fire Fight', img:'/assets/fnf-whitty-fire-fight.jpg', color1:'#f97316',color2:'#b91c1c', url:'/games/fnf-whitty-vs-boyfriend-fire-fight.html' },
         { name: 'Sprunki Girls with Hair',     img:'/assets/sprunki-girls-with-hair.png', color1:'#e91e63',color2:'#880e4f', url:'/games/sprunki-girls-with-hair.html' },
     ];
 
@@ -108,7 +123,7 @@
     // SIDEBAR
     // ═══════════════════════════════════════════
     function populateSidebar() {
-        populateSidebarList('sidebarNew', gameData.slice(0, 7));
+        populateSidebarList('sidebarNew', gameData.slice(-7));
     }
 
     function populateSidebarList(listId, games) {
@@ -145,6 +160,10 @@
                 url = url.replace(/\/(games\/)/, '/' + lang + '/$1');
                 url = url.replace(/\/(index\.html)/, '/' + lang + '/$1');
                 url = url.replace(/\/(games\.html)/, '/' + lang + '/$1');
+                // fix: root page (no path matched) — add language prefix
+                if (url.indexOf('/' + lang + '/') === -1) {
+                    url = url.replace(/\/?$/, '/' + lang + '/');
+                }
                 window.location.href = url;
             }
         });
