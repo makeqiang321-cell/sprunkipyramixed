@@ -32,6 +32,7 @@
         { name: 'Sprunksters: The Final Update', img:'/assets/sprunksters-final-update.jpg', color1:'#10b981',color2:'#84cc16', url:'/games/sprunksters-final-update.html' },
         { name: "Sprunki Shifted Pepper's Take", img:'/assets/sprunki-shifted-peppers-take.jpg', color1:'#dc2626',color2:'#7f1d1d', url:'/games/sprunki-shifted-peppers-take.html' },
         { name: 'FNF Whitty vs Boyfriend Fire Fight', img:'/assets/fnf-whitty-fire-fight.jpg', color1:'#f97316',color2:'#b91c1c', url:'/games/fnf-whitty-vs-boyfriend-fire-fight.html' },
+        { name: 'Suzy Says Game', img:'/assets/suzy-says.webp', color1:'#ff6b9d',color2:'#5b0f2e', url:'/games/suzy-says.html' },
         { name: 'Sprunki Girls with Hair',     img:'/assets/sprunki-girls-with-hair.png', color1:'#e91e63',color2:'#880e4f', url:'/games/sprunki-girls-with-hair.html' },
     ];
 

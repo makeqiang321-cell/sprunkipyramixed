@@ -31,9 +31,12 @@
         { name: 'Sprunki Pyramixed 2',       img:'/assets/sprunki-pyramixed-2.png', color1:'#c8a52e',color2:'#5c3d0e', url:'/games/sprunki-pyramixed-2.html', cat:'popular'},
         { name: 'Sprunki Phase 3',           img:'/assets/sprunki-phase-3-new.png', color1:'#4a148c',color2:'#1a1a2e', url:'/games/sprunki-phase-3.html', cat:'popular'},
         { name: 'Sprunki Girls with Hair',   img:'/assets/sprunki-girls-with-hair.png', color1:'#e91e63',color2:'#880e4f', url:'/games/sprunki-girls-with-hair.html', cat:'new'},
+        { name: 'Sprunki Phase 12 Definitive', img:'/assets/sprunki-phase-12-definitive.jpg', color1:'#0d0221',color2:'#8b0000', url:'/games/sprunki-phase-12-definitive.html', cat:'new'},
+        { name: 'Sprunki Phase 7 Definitive', img:'/assets/sprunki-phase-7-definitive.jpg', color1:'#1a0a0a',color2:'#7f1d1d', url:'/games/sprunki-phase-7-definitive.html', cat:'new'},
         { name: 'FNF Whitty vs Boyfriend Fire Fight', img:'/assets/fnf-whitty-fire-fight.jpg', color1:'#f97316',color2:'#b91c1c', url:'/games/fnf-whitty-vs-boyfriend-fire-fight.html', cat:'fnf'},
         { name: 'FNF Sonic The Funk', img:'/assets/fnf-sonic-the-funk.jpg', color1:'#1e88e5',color2:'#0d47a1', url:'/games/fnf-sonic-the-funk.html', cat:'fnf'},
         { name: 'FNF Spaghetti (LE SSERAFIM)', img:'/assets/fnf-spaghetti-le-sserafim.jpg', color1:'#7c3aed',color2:'#db2777', url:'/games/fnf-spaghetti-le-sserafim.html', cat:'fnf'},
+        { name: 'Suzy Says Game', img:'/assets/suzy-says.webp', color1:'#ff6b9d',color2:'#5b0f2e', url:'/games/suzy-says.html', cat:'new'},
     ];
 
     function escapeHtml(str) {
